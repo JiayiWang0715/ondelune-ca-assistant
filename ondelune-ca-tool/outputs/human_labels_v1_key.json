@@ -1,0 +1,422 @@
+[
+ {
+  "case_id": "X01",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "R02",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 4.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "P01",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 4.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "X12",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "可接受",
+  "judge_scores": {
+   "personalization": 4.0,
+   "scenario_fit": 3.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "A01",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "可接受",
+  "judge_scores": {
+   "personalization": 3.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 3.0,
+   "naturalness": 3.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "X12",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "RE02",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 4.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "G01",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "E02",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 4.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "A01",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 4.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "X12",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "X01",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "X07",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "可接受",
+  "judge_scores": {
+   "personalization": 3.0,
+   "scenario_fit": 4.0,
+   "brand_voice": 4.0,
+   "naturalness": 3.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "E02",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "X01",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "X07",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "P05",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 4.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 4.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "A01",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "P01",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 4.0,
+   "naturalness": 4.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "X07",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 4.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 4.0,
+   "naturalness": 4.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "P05",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 4.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "RE02",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "R02",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "P01",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "可接受",
+  "judge_scores": {
+   "personalization": 3.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "G01",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "G01",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "P05",
+  "n": 3,
+  "strategy": "light",
+  "judge_grade": "可接受",
+  "judge_scores": {
+   "personalization": 3.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "E02",
+  "n": 1,
+  "strategy": "warm",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "R02",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "好",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 5.0,
+   "naturalness": 5.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ },
+ {
+  "case_id": "RE02",
+  "n": 2,
+  "strategy": "content",
+  "judge_grade": "可接受",
+  "judge_scores": {
+   "personalization": 5.0,
+   "scenario_fit": 5.0,
+   "brand_voice": 4.0,
+   "naturalness": 3.0,
+   "no_pressure": 5.0
+  },
+  "violations": []
+ }
+]

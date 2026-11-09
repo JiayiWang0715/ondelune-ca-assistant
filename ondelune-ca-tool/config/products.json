@@ -1,0 +1,22 @@
+{
+  "_note": "Maison Ondelune 虚构产品库（Brand Book 第 4 节）。话术中的产品信息只能来自这里。aliases 用于幻觉检查的实体识别。",
+  "available_vintages": [1990, 1995, 1996, 2002, 2004, 2008, 2012, 2013, 2015, 2016],
+  "serving_knowledge": {
+    "storage": "长期保存约 10–13°C，避光、恒温、湿度 70% 以上",
+    "serving_nv": "无年份香槟侍酒约 8–10°C",
+    "serving_vintage": "年份香槟侍酒约 10–12°C，可用郁金香杯"
+  },
+  "products": [
+    {"sku": "OND-NV-BRUT", "name": "月澜·晨曦 Brut", "aliases": ["晨曦 Brut", "晨曦"], "type": "无年份", "vintage": null, "size": "750ml", "price": 680, "style": ["Brut", "多品种混酿"], "window": "购入后 1–3 年", "window_start": null, "window_end": null, "selling_point": "酒庄风格的名片，窖藏 36 个月", "occasions": ["日常", "聚会", "入门"]},
+    {"sku": "OND-NV-ROSE", "name": "月澜·晨曦 桃红", "aliases": ["晨曦 桃红", "晨曦桃红"], "type": "无年份", "vintage": null, "size": "750ml", "price": 980, "style": ["桃红", "红莓果香"], "window": "购入后 1–2 年", "window_start": null, "window_end": null, "selling_point": "红莓果香，适合庆祝和配餐", "occasions": ["庆祝", "约会", "配餐"]},
+    {"sku": "OND-NV-EXB", "name": "月澜·零度 Extra Brut", "aliases": ["零度 Extra Brut", "零度"], "type": "无年份", "vintage": null, "size": "750ml", "price": 1200, "style": ["Extra Brut", "低补液", "干"], "window": "购入后 1–3 年", "window_start": null, "window_end": null, "selling_point": "低补液，口感更干更纯净", "occasions": ["配餐", "海鲜"]},
+    {"sku": "OND-VT-2016", "name": "月澜 年份 Brut 2016", "aliases": ["年份 Brut 2016", "2016 年份"], "type": "年份", "vintage": 2016, "size": "750ml", "price": 2200, "style": ["Brut", "年份"], "window": "2025–2036", "window_start": 2025, "window_end": 2036, "selling_point": "2026 年秋季新发布", "occasions": ["收藏", "庆祝", "送礼"], "new_release": true},
+    {"sku": "OND-BDB-2015", "name": "月澜 白中白 2015", "aliases": ["白中白 2015", "白中白"], "type": "年份", "vintage": 2015, "size": "750ml", "price": 2600, "style": ["白中白", "霞多丽", "矿物感"], "window": "2024–2035", "window_start": 2024, "window_end": 2035, "selling_point": "100% 霞多丽，矿物感清晰", "occasions": ["配餐", "海鲜", "收藏"]},
+    {"sku": "OND-BDN-2013", "name": "月澜 黑中白 2013", "aliases": ["黑中白 2013", "黑中白"], "type": "年份", "vintage": 2013, "size": "750ml", "price": 2800, "style": ["黑中白", "黑皮诺", "饱满"], "window": "2023–2033", "window_start": 2023, "window_end": 2033, "selling_point": "黑皮诺酿造，酒体饱满", "occasions": ["配餐", "红肉", "收藏"]},
+    {"sku": "OND-VR-2012", "name": "月澜 年份桃红 2012", "aliases": ["年份桃红 2012", "年份桃红"], "type": "年份", "vintage": 2012, "size": "750ml", "price": 3800, "style": ["桃红", "年份"], "window": "2022–2032", "window_start": 2022, "window_end": 2032, "selling_point": "只在好年份出的桃红", "occasions": ["纪念日", "庆祝", "送礼"]},
+    {"sku": "OND-PC-2008", "name": "月澜·潮汐 2008", "aliases": ["潮汐 2008", "潮汐"], "type": "旗舰特酿", "vintage": 2008, "size": "750ml", "price": 8800, "style": ["旗舰特酿", "长期窖藏"], "window": "2020–2045", "window_start": 2020, "window_end": 2045, "selling_point": "酒庄旗舰，窖藏超 10 年", "occasions": ["收藏", "重要宴请", "送礼"]},
+    {"sku": "OND-PC-2008-MG", "name": "月澜·潮汐 2008 大瓶", "aliases": ["潮汐 2008 大瓶", "潮汐大瓶"], "type": "旗舰特酿", "vintage": 2008, "size": "1.5L", "price": 19800, "style": ["旗舰特酿", "大瓶"], "window": "2020–2050", "window_start": 2020, "window_end": 2050, "selling_point": "大瓶陈年更慢，适合收藏和宴请", "occasions": ["收藏", "宴请"]},
+    {"sku": "OND-LD-1996", "name": "月澜 晚除渣珍藏 1996", "aliases": ["晚除渣珍藏 1996", "晚除渣"], "type": "老年份", "vintage": 1996, "size": "750ml", "price": 26000, "style": ["老年份", "晚除渣"], "window": "即饮–2035", "window_start": 2020, "window_end": 2035, "selling_point": "酒庄窖中陈放近 30 年才除渣", "occasions": ["收藏", "里程碑时刻"]},
+    {"sku": "OND-SVC-BY", "name": "出生年份寻酒服务", "aliases": ["寻酒服务", "出生年份酒"], "type": "服务", "vintage": null, "size": null, "price": null, "style": [], "window": null, "window_start": null, "window_end": null, "selling_point": "为客户找到与特别年份同年的酒，仅限 available_vintages", "occasions": ["出生", "结婚", "纪念日"]}
+  ]
+}

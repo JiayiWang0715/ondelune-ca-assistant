@@ -1,0 +1,20 @@
+[project]
+name = "ca-tool"
+version = "0.1.0"
+description = "Maison Ondelune CA WeChat message generator (fictional brand)"
+requires-python = ">=3.10"
+dependencies = ["pyyaml>=6", "pydantic>=2", "python-dotenv>=1", "openpyxl>=3.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

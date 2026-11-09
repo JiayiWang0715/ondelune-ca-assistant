@@ -1,0 +1,58 @@
+# 模型配置。所有供应商都走 OpenAI 兼容的 /chat/completions 接口。
+# API key 从 .env 读取，不要写进这个文件。模型名请以各平台控制台显示的为准。
+
+providers:
+  qwen:
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1        # 国际站：https://dashscope-intl.aliyuncs.com/compatible-mode/v1
+    api_key_env: DASHSCOPE_API_KEY
+    model: qwen3.7-plus        # 新用户有 100 万 token 免费额度（北京地域，90 天）；也可用 qwen-plus
+  deepseek:
+    base_url: https://api.deepseek.com
+    api_key_env: DEEPSEEK_API_KEY
+    model: deepseek-flash      # 官方 2026-11 价目表上的模型名；更强的是 deepseek-v4-pro
+  deepseek_pro:
+    base_url: https://api.deepseek.com
+    api_key_env: DEEPSEEK_API_KEY
+    model: deepseek-v4-pro
+  kimi:
+    base_url: https://api.moonshot.cn/v1
+    api_key_env: MOONSHOT_API_KEY
+    model: moonshot-v1-8k
+  # Hugging Face Inference Providers：一个 HF token 调多家开源模型（需购买 credits 或 PRO 额度）
+  # 模型 id 以 https://huggingface.co/models?inference_provider=all 或 GET /v1/models 为准
+  hf_deepseek:
+    base_url: https://router.huggingface.co/v1
+    api_key_env: HF_TOKEN
+    model: deepseek-ai/DeepSeek-V3-0324
+  # 与官方 deepseek-flash / deepseek-v4-pro 相同的模型（官方价目表：V4.1-Flash-1017、V4-Pro-0813），经 Hugging Face 调用
+  hf_ds_flash:
+    base_url: https://router.huggingface.co/v1
+    api_key_env: HF_TOKEN
+    model: deepseek-ai/DeepSeek-V4.1-Flash-1017
+  hf_ds_pro:
+    base_url: https://router.huggingface.co/v1
+    api_key_env: HF_TOKEN
+    model: deepseek-ai/DeepSeek-V4-Pro-0813
+  hf_kimi:
+    base_url: https://router.huggingface.co/v1
+    api_key_env: HF_TOKEN
+    model: moonshotai/Kimi-K3
+  hf_qwen:
+    base_url: https://router.huggingface.co/v1
+    api_key_env: HF_TOKEN
+    model: Qwen/Qwen3.8-27B
+  mock:
+    base_url: null
+    api_key_env: null
+    model: mock
+
+# 生成和裁判用不同家族的模型，减少"自己给自己打高分"
+roles:
+  generator: mock     # 方案：hf_qwen（Hugging Face 上的千问）或 deepseek，先做对比再定
+  judge: mock         # 方案：deepseek_pro（DeepSeek 官方 V4-Pro），与生成模型不同家
+
+generation:
+  temperature: 0.8    # 生成要有多样性
+  max_rewrite_rounds: 2
+judging:
+  temperature: 0.0    # 裁判要稳定、可复现

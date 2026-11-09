@@ -1,0 +1,72 @@
+# 六个场景的 playbook（Brand Book 第 6 节 + 第 9 节修订）
+# goal / timing / must_include / forbid 进入生成 prompt；checks 是第 1 层自动检查的开关。
+
+scenarios:
+  greeting:
+    id: 1
+    name: 生日 / 节日问候
+    proactive: true
+    goal: 维护关系，让客户感到被记得
+    timing: 生日当天 10:00–12:00；节日前 1 天或当天；清明等日子不发庆祝类内容
+    must_include: [偏好称呼, 1 个与客户相关的个人化细节（只用档案里写明的事实）]
+    special: 节日问候可以用 1–2 个祝福成语，再多就像群发
+    forbid: [任何产品名或价格, 推销]
+    checks: {no_product: true, no_price: true}
+
+  recommendation:
+    id: 2
+    name: 产品推荐
+    proactive: true
+    goal: 把对的酒推荐给对的人
+    timing: 新年份发布；客户提到某个场合
+    must_include: [推荐理由与客户已知偏好或场合挂钩, 最多 2 款产品]
+    forbid: [推荐价格超过客户历史单笔最高 × 2 的产品, 推荐已买过的同款（复购除外）]
+    special: 客户偏好未知时，用一个问题（场合、口味或预算）代替直接推荐
+    checks: {max_products: 2, price_cap_multiplier: 2}
+
+  aftercare:
+    id: 3
+    name: 售后关怀
+    proactive: true
+    goal: 让这瓶酒被喝好、被记住
+    timing: 购买后 3–7 天；年份酒进入适饮期；送礼单跟进收礼人反馈
+    must_include: [1 条和所购 SKU 对应的实用建议（保存或侍酒）]
+    forbid: [首次关怀就交叉推销]
+    special: 对话中有未解决的问题或投诉时，先给处理步骤和进展，不否认问题，不推荐任何产品
+    checks: {only_purchased_products: true}
+
+  reactivation:
+    id: 4
+    name: 唤醒老客
+    proactive: true
+    goal: 自然地重新联系
+    timing: 客户被标记为沉睡（> 365 天未购买且 > 180 天未互动）
+    must_include: [1 个真实的由头：新年份发布、藏酒进入适饮期、纪念日临近、客户提过的兴趣, 说清这个由头和这位客户有什么关系（他/她的藏酒、口味或经历），不能只播报新品]
+    forbid: [责备语气（好久没来了）, 用优惠当诱饵, 追问为什么不来]
+    checks: {}
+
+  event_invitation:
+    id: 5
+    name: 活动邀约
+    proactive: true
+    goal: 让客户感到被重视
+    timing: 活动前 14–21 天
+    must_include: [活动名称、日期、地点（均来自输入）, 活动形式和预计时长, 为什么想到这位客户]
+    forbid: [邀请不符合层级的活动, 编造时间地点, 制造焦虑]
+    checks: {tier_eligibility: true}
+
+  price_objection:
+    id: 6
+    name: 价格异议
+    proactive: false
+    goal: 守住价格，保住关系
+    timing: 回复客户的最后一条消息
+    must_include: [第一句只共情，不提价格政策, 价格政策用正面表达（坚持统一价是为了每位客人拿到同样的品质和保障）, 1 个价值点或替代方案, 客户提到其他渠道或价格时，用一句正面讲官方渠道的保障（全程温控、正品、售后），不评价对方, 以轻邀约或开放问句收尾]
+    forbid: [承诺折扣或赠品, 贬低代购/电商/其他品牌, 连续摆出超过 2 个说服理由, 用「平摊到每天」这类耐用品算法]
+    toolbox: [讲清价值（年份、窖藏、产量）, 官方渠道保障（温控储存链路、正品、售后）, 同风格更低价位的替代 SKU, 邀请到沙龙先品鉴, 尊重客户不买的选择]
+    checks: {first_sentence_no_policy: true}
+
+tiers:
+  珍藏会员: {rank: 3, min_spend_12m: 100000}
+  臻选客户: {rank: 2, min_spend_12m: 20000}
+  品鉴客户: {rank: 1, min_spend_12m: 0}
